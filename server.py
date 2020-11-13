@@ -3,7 +3,6 @@ import socket
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((socket.gethostname(), 8000))
 s.listen(5)
-print(socket.gethostname())
 
 while True:
 	clientsocket, address = s.accept()
